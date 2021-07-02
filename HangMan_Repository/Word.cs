@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace HangMan_Repository
 {
-    public class GetWord
+    public class Word
     {
         public WordOption WordChoice { get; set; }
 
-        public GetWord(WordOption wordChoice)
+        public Word(WordOption wordChoice)
         {
             WordChoice = wordChoice;
         }
-        public GetWord() { }
+        public Word() { }
     }
     public enum WordOption
     {

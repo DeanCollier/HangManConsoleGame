@@ -10,12 +10,19 @@ namespace HangMan_Console
     class ProgramUI
     {
         private bool isRunning = true;
-        private readonly GetWord _getWord = new GetWord();
+        private readonly Word _word = new Word();
 
         private void Run()
         {
+            while (isRunning)
+            {
+                Console
+
+            }
 
         }
+
+
 
     }
 }

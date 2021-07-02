@@ -41,9 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GetWord.cs" />
-    <Compile Include="HangingMan.cs" />
+    <Compile Include="Word.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WordRepo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
