@@ -123,5 +123,12 @@ namespace HangMan_Console
             string guesses = string.Join(",", previousGuesses);
             Console.WriteLine($"Previous guesses: " + guesses); 
         }
+        public void PrintGameInstructions()
+        {
+            Console.WriteLine("-Read the instructions below.\n" +
+                              "-Press ENTER after your guess.\n" +
+                              "-Game will end if the hanging man has a head, body, arms, and legs.\n" +
+                              "GOODLUCK!");
+        }
     }
 }

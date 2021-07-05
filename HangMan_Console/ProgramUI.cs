@@ -41,77 +41,34 @@ namespace HangMan_Console
             switch (score)
             {
                 case 1:
+                    _gallow.PrintGameInstructions();
                     _gallow.PrintManOne();
-                    _gallow.PrintGuessLine(wordLength, answerArray, _guessedStrings);
-                    if (CheckGuess(randomWord, GetInput()))
-                    {
-                        break;
-                    }
-                    else
-                    {
-                        score++;
-                    }
+                    ExecuteGame(wordLength, randomWord);
                     break;
                 case 2:
+                    _gallow.PrintGameInstructions();
                     _gallow.PrintManTwo();
-                    _gallow.PrintGuessLine(wordLength, answerArray, _guessedStrings);
-                    if (CheckGuess(randomWord, GetInput()))
-                    {
-                        break;
-                    }
-                    else
-                    {
-                        score++;
-                    }
+                    ExecuteGame(wordLength, randomWord);
                     break;
                 case 3:
+                    _gallow.PrintGameInstructions();
                     _gallow.PrintManThree();
-                    _gallow.PrintGuessLine(wordLength, answerArray, _guessedStrings);
-
-                    if (CheckGuess(randomWord, GetInput()))
-                    {
-                        break;
-                    }
-                    else
-                    {
-                        score++;
-                    }
+                    ExecuteGame(wordLength, randomWord);
                     break;
                 case 4:
+                    _gallow.PrintGameInstructions();
                     _gallow.PrintManFour();
-                    _gallow.PrintGuessLine(wordLength, answerArray, _guessedStrings);
-                    if (CheckGuess(randomWord, GetInput()))
-                    {
-                        break;
-                    }
-                    else
-                    {
-                        score++;
-                    }
+                    ExecuteGame(wordLength, randomWord);
                     break;
                 case 5:
+                    _gallow.PrintGameInstructions();
                     _gallow.PrintManFive();
-                    _gallow.PrintGuessLine(wordLength, answerArray, _guessedStrings);
-                    if (CheckGuess(randomWord, GetInput()))
-                    {
-                        break;
-                    }
-                    else
-                    {
-                        score++;
-                    }
+                    ExecuteGame(wordLength, randomWord);
                     break;
                 case 6:
+                    _gallow.PrintGameInstructions();
                     _gallow.PrintManSix();
-                    _gallow.PrintGuessLine(wordLength, answerArray, _guessedStrings);
-                    if (CheckGuess(randomWord, GetInput()))
-                    {
-                        break;
-                    }
-                    else
-                    {
-                        score++;
-                    }
+                    ExecuteGame(wordLength, randomWord);
                     break;
                 case 7:
                     _gallow.PrintManSeven(randomWord);
@@ -123,21 +80,13 @@ namespace HangMan_Console
             }
 
         }
-
-        private char[] StringToCharArray(string wordToConvert)
+        private void ExecuteGame(int wordLength,string randomWord)
         {
-            char[] wordCharArray = wordToConvert.ToCharArray();
-            return wordCharArray;
-            
-        }
-        private char[] CreateAnswerArray(int length)
-        {
-            char[] answerArray = new char[length];
-            for (int i = 0; i < length; i++)
+            _gallow.PrintGuessLine(wordLength, answerArray, _guessedStrings);
+            if (!CheckGuess(randomWord, GetInput()))
             {
-                answerArray[i] = '_';
+                score++;
             }
-            return answerArray;
         }
         private string GetInput()
         {
@@ -168,26 +117,6 @@ namespace HangMan_Console
                 check = true;
             }
             return check;
-            
-        }
-        private bool PreviousGuess(string guess)
-        {
-            bool check = false;
-            foreach (string guessString in _guessedStrings)
-            {
-                if (guessString == guess)
-                {
-                    check = true;
-                    return check;
-                }
-            }
-            _guessedStrings.Add(guess);
-            return check;
-        }
-        private string CharArrayToString(char[] stringArray)
-        {
-            string newString = new string(stringArray);
-            return newString;
         }
         private bool AddToAnswerArray(string randomWord, string guessString)
         {
@@ -199,7 +128,7 @@ namespace HangMan_Console
                     answerArray = StringToCharArray(guessString);
                     check = true;
                     return check;
-                    
+
                 }
             }
             else
@@ -222,10 +151,44 @@ namespace HangMan_Console
                 }
             }
             return check;
+        }
+        private bool PreviousGuess(string guess)
+        {
+            bool check = false;
+            foreach (string guessString in _guessedStrings)
+            {
+                if (guessString == guess)
+                {
+                    check = true;
+                    return check;
+                }
+            }
+            _guessedStrings.Add(guess);
+            return check;
+        }
+        private string CharArrayToString(char[] stringArray)
+        {
+            string newString = new string(stringArray);
+            return newString;
+        }
+        private char[] StringToCharArray(string wordToConvert)
+        {
+            char[] wordCharArray = wordToConvert.ToCharArray();
+            return wordCharArray;
 
         }
+        private char[] CreateAnswerArray(int length)
+        {
+            char[] answerArray = new char[length];
+            for (int i = 0; i < length; i++)
+            {
+                answerArray[i] = '_';
+            }
+            return answerArray;
+        }
 
-       
+
+
 
 
 
