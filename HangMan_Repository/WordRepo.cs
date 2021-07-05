@@ -9,6 +9,7 @@ namespace HangMan_Repository
      public class WordRepo
     {
         private readonly Word _word = new Word();
+        
         //create
         public bool ChoseWord()
         {
@@ -19,5 +20,6 @@ namespace HangMan_Repository
         }
         //read
         public string GetWord() => _word.WordChoice.ToString();
+        
     }
 }

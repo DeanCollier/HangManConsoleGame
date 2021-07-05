@@ -81,25 +81,12 @@ namespace HangMan_Console
                               "O          |\n" +
                             ">-|-<        |\n" +
                               "|          |\n" +
-                              "           |\n" +
-                              "           |\n" +
-                              "__________*|*__________\n");
-
-        }
-        public void PrintManSeven()
-        {
-            Console.WriteLine("+==========+\n" +
-                              "|          |\n" +
-                              "|          |\n" +
-                              "O          |\n" +
-                            ">-|-<        |\n" +
-                              "|          |\n" +
                              "(           |\n" +
                               "           |\n" +
                               "__________*|*__________\n");
 
         }
-        public void PrintManEight()
+        public void PrintManSeven()
         {
             Console.WriteLine("+==========+\n" +
                               "|          |\n" +

@@ -10,16 +10,36 @@ namespace HangMan_Console
     class ProgramUI
     {
         private bool isRunning = true;
-        private readonly Word _word = new Word();
+        private readonly WordRepo _repo = new WordRepo();
 
-        private void Run()
+        public void Run()
         {
             while (isRunning)
             {
-                Console
+                Console.WriteLine("Welcome to HANGMAN, press any key to start!");
+                Console.ReadKey();
+                string randomWord = _repo.GetWord();
+                char[] randomWordArray = StringToCharArray(randomWord);
+                char[] answerArray = CreateAnswerArray(randomWord);
+
 
             }
 
+        }
+        private char[] StringToCharArray(string wordToConvert)
+        {
+            char[] wordCharArray = wordToConvert.ToCharArray();
+            return wordCharArray;
+            
+        }
+        private char[] CreateAnswerArray(string randomWord)
+        {
+            char[] answerArray = new char[randomWord.Length];
+            for (int i = 0; i < randomWord.Length; i++)
+            {
+                answerArray[i] = '_';
+            }
+            return answerArray;
         }
 
 
