@@ -89,10 +89,6 @@ namespace HangMan_Console
         private string GetInput()
         {
             string guessString = Console.ReadLine().ToLower();
-            if (guessString.Length == 0)
-            {
-                Run();
-            }
             return guessString;
         }
         private bool CheckGuess(string randomWord, string guessString)
