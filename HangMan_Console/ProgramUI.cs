@@ -36,8 +36,6 @@ namespace HangMan_Console
         }
         public void DisplayGameMenu(string randomWord, char[] answerArray, int wordLength)
         {
-            Console.WriteLine(randomWord);
-            string guess;
             switch (score)
             {
                 case 1:
@@ -91,6 +89,10 @@ namespace HangMan_Console
         private string GetInput()
         {
             string guessString = Console.ReadLine().ToLower();
+            if (guessString.Length == 0)
+            {
+                Run();
+            }
             return guessString;
         }
         private bool CheckGuess(string randomWord, string guessString)
