@@ -1,0 +1,6 @@
+D:\1150\Assignments\GroupConsoleApp\HangMan\HangMan_Repository\HangMan_Repository\bin\Debug\HangMan_Repository.dll
+D:\1150\Assignments\GroupConsoleApp\HangMan\HangMan_Repository\HangMan_Repository\bin\Debug\HangMan_Repository.pdb
+D:\1150\Assignments\GroupConsoleApp\HangMan\HangMan_Repository\HangMan_Repository\obj\Debug\HangMan_Repository.csproj.AssemblyReference.cache
+D:\1150\Assignments\GroupConsoleApp\HangMan\HangMan_Repository\HangMan_Repository\obj\Debug\HangMan_Repository.csproj.CoreCompileInputs.cache
+D:\1150\Assignments\GroupConsoleApp\HangMan\HangMan_Repository\HangMan_Repository\obj\Debug\HangMan_Repository.dll
+D:\1150\Assignments\GroupConsoleApp\HangMan\HangMan_Repository\HangMan_Repository\obj\Debug\HangMan_Repository.pdb

@@ -1,0 +1,10 @@
+D:\1150\Assignments\GroupConsoleApp\HangMan\HangMan_Repository\HangMan_Console\obj\Debug\HangMan_Console.csproj.AssemblyReference.cache
+D:\1150\Assignments\GroupConsoleApp\HangMan\HangMan_Repository\HangMan_Console\obj\Debug\HangMan_Console.csproj.CoreCompileInputs.cache
+D:\1150\Assignments\GroupConsoleApp\HangMan\HangMan_Repository\HangMan_Console\bin\Debug\HangMan_Console.exe.config
+D:\1150\Assignments\GroupConsoleApp\HangMan\HangMan_Repository\HangMan_Console\bin\Debug\HangMan_Console.exe
+D:\1150\Assignments\GroupConsoleApp\HangMan\HangMan_Repository\HangMan_Console\bin\Debug\HangMan_Console.pdb
+D:\1150\Assignments\GroupConsoleApp\HangMan\HangMan_Repository\HangMan_Console\bin\Debug\HangMan_Repository.dll
+D:\1150\Assignments\GroupConsoleApp\HangMan\HangMan_Repository\HangMan_Console\bin\Debug\HangMan_Repository.pdb
+D:\1150\Assignments\GroupConsoleApp\HangMan\HangMan_Repository\HangMan_Console\obj\Debug\HangMan_Console.csproj.CopyComplete
+D:\1150\Assignments\GroupConsoleApp\HangMan\HangMan_Repository\HangMan_Console\obj\Debug\HangMan_Console.exe
+D:\1150\Assignments\GroupConsoleApp\HangMan\HangMan_Repository\HangMan_Console\obj\Debug\HangMan_Console.pdb
