@@ -86,7 +86,7 @@ namespace HangMan_Console
                               "__________*|*__________\n");
 
         }
-        public void PrintManSeven()
+        public void PrintManSeven(string randomWord)
         {
             Console.WriteLine("           +==========+\n" +
                               "           |          |\n" +
@@ -97,7 +97,9 @@ namespace HangMan_Console
                               "           |         ( )\n" +
                               "           |           \n" +
                               "__________*|*__________\n");
-            Console.WriteLine("Sorry, looks like you're all out of lives :(");
+            Console.WriteLine("Sorry, looks like you're all out of guesses :(");
+            Console.WriteLine($"The word was: " + randomWord);
+            Console.ReadKey();
         }
         public void PrintGuessLine(int wordLength, char[] answerArray, List<string> previousGuesses)
         {
@@ -108,15 +110,18 @@ namespace HangMan_Console
             
         }
 
-        public void PrintWinScreen()
+        public void PrintWinScreen(string randomWord)
         {
             Console.Clear();
             Console.WriteLine("Congrats! You guessed the word correctly!");
+            Console.WriteLine($"The word was: " + randomWord);
             Console.ReadKey();
         }
+        
         public void PrintPreviousGuesses(List<string> previousGuesses)
         {
-            Console.WriteLine($"Previous guesses: " + previousGuesses.ToString()); 
+            string guesses = string.Join(",", previousGuesses);
+            Console.WriteLine($"Previous guesses: " + guesses); 
         }
     }
 }
