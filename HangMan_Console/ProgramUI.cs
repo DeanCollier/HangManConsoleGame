@@ -196,10 +196,10 @@ namespace HangMan_Console
             {
                 if (guessString == randomWord)
                 {
-                    _gallow.PrintWinScreen(randomWord);
+                    answerArray = StringToCharArray(guessString);
                     check = true;
                     return check;
-                    isRunning = false;
+                    
                 }
             }
             else
